@@ -1,0 +1,36 @@
+<h1>Catbox</h1>
+<h3>Meow Beats and Sequencer</h3>
+
+<div id="pads">
+    <h2>Cat Pads</h2>
+    <div ng-click="touchMeow(0)" class="pad" id="pad0" ng-class="{active: touched[0]}">
+    </div><div ng-click="touchMeow(1)" class="pad" id="pad1" ng-class="{active: touched[1]}">
+    </div><div ng-click="touchMeow(2)" class="pad" id="pad2" ng-class="{active: touched[2]}">
+    </div><div ng-click="touchMeow(3)" class="pad" id="pad3" ng-class="{active: touched[3]}">
+    </div>
+</div>
+
+<div id="sequence">
+    <h2>
+        Meow Sequencer
+    </h2>
+    
+    <div id="buttons">
+        <div ng-hide="playingSequence" ng-click="playSequence()" id="play">
+        </div><div ng-show="playingSequence" ng-click="stopSequence()" id="stop"><div></div>
+        </div><div id="bpm">
+            BPM: {{bpm}}
+        </div><input type="range" min="80" max="200" step="1" ng-model="bpm" ng-change="encodeUrlSequence()">
+    </div>
+    <div ng-repeat="line in sequence" class="line" ng-class="{line0: $index == 0, line1: $index == 1, line2: $index == 2, line3: $index == 3}">
+        <div ng-repeat="beat in line track by $index" ng-click="changeBeat($parent.$index, $index)" ng-class="{active: currentBeat == $index}" class="beat">
+            <div class="beatHandler" ng-class="{on: beat}"></div>
+        </div>
+    </div>
+</div>
+
+<div id="share">
+    <p>Spread the joy! Share this sequence with other humans! Just copy/paste this url wherever you want:</p>
+    <p><em>{{currentUrl}}</em></p>
+    <p id="info">Catbox is developed as a very silly weekend project by <a href="">Fran López</a> (fran -at- fran-lopez.com).</p>
+</div>
