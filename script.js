@@ -80,7 +80,8 @@ catbox.controller('BeatsCtrl', function ($scope, $routeParams, $location) {
     
     // exactly what the name says
     $scope.playMeow = function(meowIndex) {
-        $scope.audios[meowIndex].element.currentTime = 0;
+        // $scope.audios[meowIndex].element.currentTime = 0;
+        $scope.audios[meowIndex].element.load();
         $scope.audios[meowIndex].element.play();
     };
     
