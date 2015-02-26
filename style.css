@@ -216,13 +216,15 @@ h3 {
 }
 
 
+@media (min-width: 850px) {
+    #main {
+        margin-left: 50%;
+    }
+}
+
 @media (min-device-width: 1150px) {
     #bg {
         background: url('files/bg1400.jpg') no-repeat center center;
-    }
-    
-    #main {
-        margin-left: 50%;
     }
 }
 
