@@ -83,10 +83,16 @@ h3 {
     width: 20.5%;
     margin-right: 6%;
     cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    transition: all 100ms linear;
 }
 
 #pads .pad.active {
-    background-color: #F9F9D5;
+    opacity: 1;
 }
 
 #pads #pad3 {
@@ -95,6 +101,19 @@ h3 {
 
 #pads .pad img {
     width: 100%;
+    -webkit-transition: transform 100ms linear;
+    -moz-transition: transform 100ms linear;
+    -ms-transition: transform 100ms linear;
+    -o-transition: transform 100ms linear;
+    transition: transform 100ms linear;
+}
+
+#pads .pad.active img {
+    -webkit-transform: scale3d(0.7, 0.7, 1);
+    -moz-transform: scale3d(0.7, 0.7, 1);
+    -ms-transform: scale3d(0.7, 0.7, 1);
+    -o-transform: scale3d(0.7, 0.7, 1);
+    transform: scale3d(0.7, 0.7, 1);
 }
 
 #sequence {
