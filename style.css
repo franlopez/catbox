@@ -64,8 +64,8 @@ h3 {
 
 #pads .pad {
     display: inline-block;
-    width: 19.5%;
-    margin: 0 2% 2% 0;
+    width: 20.5%;
+    margin-right: 6%;
     cursor: pointer;
 }
 
