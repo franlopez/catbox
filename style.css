@@ -151,11 +151,11 @@ h3 {
 }
 
 #sequence .line2 .beat {
-    background: #ffa1cb;
+    background: #3AC0E1;
 }
 
 #sequence .line3 .beat {
-    background: #91da5e;
+    background: #15BE4D;
 }
 
 #sequence .line .beat.active {
