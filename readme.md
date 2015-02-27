@@ -3,7 +3,7 @@ Cat Box
 
 A meow beatbox and sequencer.
 
-### [See it in action!](http://franlopez.github.io/catbox/#/132/8080/3000/830/20a)
+### [See it in action!](http://franlopez.github.io/catbox/#/132/8080/3000/850/20a)
 
 Info
 ----
