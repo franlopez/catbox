@@ -64,12 +64,7 @@ h3 {
 
 #pads .pad {
     display: inline-block;
-    background-color: #63556B;
-    background-size: 90% 90%;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 19.5%;
-    padding: 21.5% 2% 2% 2%;
     margin: 0 2% 2% 0;
     cursor: pointer;
 }
@@ -78,20 +73,7 @@ h3 {
     background-color: #F9F9D5;
 }
 
-#pads #pad0 {
-    background-image: url(files/cat0.png);
-}
-
-#pads #pad1 {
-    background-image: url(files/cat1.png);
-}
-
-#pads #pad2 {
-    background-image: url(files/cat2.png);
-}
-
 #pads #pad3 {
-    background-image: url(files/cat3.png);
     margin-right: 0;
 }
 
@@ -173,17 +155,11 @@ h3 {
 }
 
 #play {
-    background: url(files/play.png) no-repeat center center;
-    background-size: auto 85%;
+    background: url("files/play.svg") no-repeat;
 }
 
-#stop div {
-    background: #63556B;
-    position: absolute;
-    top: 0.2em;
-    left: 0.4em;
-    right: 0.4em;
-    bottom: 0.2em;
+#stop {
+    background: url("files/stop.svg") no-repeat;
 }
 
 #bpm {

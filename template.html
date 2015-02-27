@@ -4,9 +4,13 @@
 <div id="pads">
     <h2>Cat Pads</h2>
     <div ng-click="touchMeow(0)" class="pad" id="pad0" ng-class="{active: touched[0]}">
+        <img src="files/cat0.svg">
     </div><div ng-click="touchMeow(1)" class="pad" id="pad1" ng-class="{active: touched[1]}">
+        <img src="files/cat1.svg">
     </div><div ng-click="touchMeow(2)" class="pad" id="pad2" ng-class="{active: touched[2]}">
+        <img src="files/cat2.svg">
     </div><div ng-click="touchMeow(3)" class="pad" id="pad3" ng-class="{active: touched[3]}">
+        <img src="files/cat3.svg">
     </div>
 </div>
 
@@ -17,7 +21,7 @@
     
     <div id="buttons">
         <div ng-hide="playingSequence" ng-click="playSequence()" id="play">
-        </div><div ng-show="playingSequence" ng-click="stopSequence()" id="stop"><div></div>
+        </div><div ng-show="playingSequence" ng-click="stopSequence()" id="stop">
         </div><div id="bpm">
             BPM: {{bpm}}
         </div><input type="range" min="80" max="200" step="1" ng-model="bpm" ng-change="encodeUrlSequence()">
