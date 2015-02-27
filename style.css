@@ -104,24 +104,22 @@ h3 {
 }
 
 #sequence .line {
-    width: 99%;
-    background: #63556B;
+    width: 100%;
     font-size: 0;
-    padding: 0.5% 0.5% 0 0.5%;
-}
-
-#sequence .line3 {
-    padding-bottom: 0.5%;
+    padding-bottom: 1.5%;
 }
 
 #sequence .line .beat {
     display: inline-block;
     position: relative;
-    width: 5.25%;
+    width: 4.75%;
     padding-bottom: 7%;
-    margin: 0.5%;
-    background: #F9F9D5;
+    margin-right: 1.6%;
     cursor: pointer;
+}
+
+#sequence .line .beat:last-child {
+    margin-right: 0;
 }
 
 #sequence .line0 .beat {
