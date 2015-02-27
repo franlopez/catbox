@@ -1,9 +1,9 @@
-Catbox
-======
+Cat Box
+=======
 
 A meow beatbox and sequencer.
 
-### [See it in action!](http://franlopez.github.io/catbox/)
+### [See it in action!](http://franlopez.github.io/catbox/#/132/8080/3000/850/20a)
 
 Info
 ----
